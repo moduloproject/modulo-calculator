@@ -11,6 +11,7 @@ body {
 .button {
 	height: 40px;
 	width: 40px;
+    margin-right: -4px;
 }
 .button-equals {
 	height: 40px;
