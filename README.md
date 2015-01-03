@@ -1,2 +1,3 @@
-Simple calculator by the Modulo Team
+Modulo Calculator
 =======
+This is the Modulo Calculator, maintained mainly by Martin Ristovksi 
