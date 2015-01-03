@@ -3,15 +3,16 @@
 	<head>
 		<title>Modulo Calculator</title>
 		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="calculator.js"></script>
 	</head>
 	<body>
 		<div class="box">
 
-			<input type="text" readonly size="21" class="display" value="1234567890"></input>
+			<input type="text" readonly size="21" value="1234567890" id="display"></input>
 
 			<div class="keys">
 				<div class="row">
-					<!--7--><button class="button">7</button>
+					<!--7--><button class="button" onclick="pushCharacter()">7</button>
 					<!--8--><button class="button">8</button>
 					<!--9--><button class="button">9</button>
 					<!--"/"--><button class="button">/</button>

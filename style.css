@@ -1,19 +1,23 @@
 body {
 	margin: 0 auto;
 }
-.box {
-	background-color: #212121;
-}
-.display {
+#display {
 	background-color: #FAFAFA;
 	text-align: right;
+    border: 1px solid #282828;
 }
 .button {
 	height: 40px;
 	width: 40px;
     margin-right: -4px;
+    background-color: #212121;
+    color: #FAFAFA;
+    border: 1px solid #282828;
 }
 .button-equals {
 	height: 40px;
 	width: 160px;
+    background-color: #212121;
+    color: #FAFAFA;
+    border: 1px solid #282828;
 }
