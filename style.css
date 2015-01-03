@@ -5,6 +5,7 @@ body {
 	background-color: #FAFAFA;
 	text-align: right;
     border: 1px solid #282828;
+    width: 158px;
 }
 .button {
 	height: 40px;
