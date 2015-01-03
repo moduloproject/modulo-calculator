@@ -1,0 +1,18 @@
+body {
+	margin: 0 auto;
+}
+.box {
+	background-color: #212121;
+}
+.display {
+	background-color: #FAFAFA;
+	text-align: right;
+}
+.button {
+	height: 40px;
+	width: 40px;
+}
+.button-equals {
+	height: 40px;
+	width: 160px;
+}
