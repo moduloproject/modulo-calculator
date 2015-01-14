@@ -14,3 +14,10 @@ var calculate = function() {
 var equalbutton = /* Same for input, but instead with .button-equals */;
 equalbutton.onclick = calculate();
 
+/* Bonus exercise ! Add a clear button */
+var clear = function() {
+    /* Set the input.value to an empty string */
+}
+var clearbutton = /* Note that's there's no clear button in the html, and you have to add it yourself
+                   * And reference it in the variable using document.querySelector("element's css selector") */
+clearbutton.onclick = /* Guess :D */
