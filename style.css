@@ -1,19 +1,36 @@
 body {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 .box {
-	background-color: #212121;
+    width: 222px;
+    height: 222px;
+}
+.box, .keys {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .display {
-	background-color: #FAFAFA;
-	text-align: right;
+    background-color: #FAFAFA;
+    text-align: right;
+    border: 1px solid #282828;
+}
+.equals,
+.row {
+    display: flex;
+    flex: 1;
 }
 .button {
-	height: 40px;
-	width: 40px;
-    margin-right: -4px;
+    flex: 1;
+    float: left;
+    background-color: #212121;
+    color: #FAFAFA;
+    border: 1px solid #282828;
 }
 .button-equals {
-	height: 40px;
-	width: 160px;
+    width: 160px;
+    flex: 1;
+    background-color: #212121;
+    color: #FAFAFA;
+    border: 1px solid #282828;
 }

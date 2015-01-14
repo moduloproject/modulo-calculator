@@ -7,7 +7,7 @@
 	<body>
 		<div class="box">
 
-			<input type="text" readonly size="21" class="display" value="1234567890"></input>
+			<input type="text" readonly id="display"></input>
 
 			<div class="keys">
 				<div class="row">
@@ -29,10 +29,10 @@
 					<!--"-"--><button class="button">-</button>
 				</div>
 				<div class="row">
-					<!--0--><button class="button">0</button>
-					<!--"."--><button class="button">.</button>
-					<!--"%"--><button class="button">%</button>
-					<!--"+"--><button class="button">+</button>
+					<!--0--><button class="button" onclick="pushCharacter(0)">0</button>
+					<!--"."--><button class="button" onclick="pushCharacter(.)">.</button>
+					<!--"%"--><button class="button" onclick="pushCharacter(c)">C</button>
+					<!--"+"--><button class="button" onclick="pushCharacter(+)">+</button>
 				</div>
 				<div class="equals">
 					<!--"="--><button class="button-equals">=</button>
@@ -40,5 +40,6 @@
 			</div>
 			
 		</div>
+		<script type="text/javascript" src="calculator.js"></script>
 	</body>
 </html>
