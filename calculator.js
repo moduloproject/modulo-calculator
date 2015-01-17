@@ -8,7 +8,7 @@ var pushCharacter = function(character) {
 var buttons = document.querySelectorAll(".button");
 
 for (var i = 0; i < buttons.length; i++) {
-    buttons[i].onclick = pushCharacter(buttons[i].innerHTML);
+    buttons[i].onclick = function() { pushCharacter(buttons[i].innerHTML); }
 };
 
 var calculate = function() {
@@ -18,15 +18,12 @@ var calculate = function() {
 
 var equalbutton = document.querySelector(".button-equals");/* Same for input, but instead with .button-equals */
 
-equalbutton.onclick = calculate();
+equalbutton.onclick = calculate;
 
-/* Bonus exercise ! Add a clear button */
 var clear = function() {
     /* Set the input.value to an empty string */
     input.value = "";
 };
 
-var clearbutton = document.querySelector("clearbutton");/* Note that's there's no clear button in the html, and you have to add it yourself
-                   * And reference it in the variable using document.querySelector("element's css selector") */
-
-clearbutton.onclick = clear(); /* Guess :D */
+var clearbutton = document.querySelector(".clearbutton");
+clearbutton.onclick = clear;
