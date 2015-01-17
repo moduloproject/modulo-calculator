@@ -27,6 +27,13 @@ body {
     color: #FAFAFA;
     border: 1px solid #282828;
 }
+.clearbutton {
+    flex: 1;
+    float: left;
+    background-color: #212121;
+    color: #FAFAFA;
+    border: 1px solid #282828;
+}
 .button-equals {
     width: 160px;
     flex: 1;
