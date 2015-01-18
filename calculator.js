@@ -13,8 +13,10 @@ function clear() {
 
 window.onload = function() {
     var buttons = document.querySelectorAll(".button");
+    var button;
     for (var i = 0; i < buttons.length; i++) {
-        buttons[i].onclick = function() { pushCharacter(buttons[i].innerHTML); }
+        button = buttons[i];
+        button.onclick = function() { pushCharacter(button.innerHTML); }
     };
 
     var equalbutton = document.querySelector(".button-equals");
