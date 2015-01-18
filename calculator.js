@@ -1,6 +1,7 @@
 function pushCharacter(character) {
     var input = document.querySelector("#display");
     input.value = input.value + character;
+    console.log(character);
 };
 function calculate() {
     var input = document.querySelector("#display");
@@ -13,10 +14,9 @@ function clear() {
 
 window.onload = function() {
     var buttons = document.querySelectorAll(".button");
-    var button;
     for (var i = 0; i < buttons.length; i++) {
-        button = buttons[i];
-        button.onclick = function() { pushCharacter(button.innerHTML); }
+        var button = buttons[i];
+        button.addEventListener("click", function() { pushCharacter(button.innerHTML); });
     };
 
     var equalbutton = document.querySelector(".button-equals");
