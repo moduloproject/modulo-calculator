@@ -14,10 +14,9 @@ function clear() {
 
 window.onload = function() {
     var buttons = document.querySelectorAll(".button");
-    for (var i = 0; i < buttons.length; i++) {
-        var button = buttons[i];
+    [].forEach.call(buttons, function(button) {
         button.addEventListener("click", function() { pushCharacter(button.innerHTML); });
-    };
+    });
 
     var equalbutton = document.querySelector(".button-equals");
     equalbutton.onclick = calculate;
