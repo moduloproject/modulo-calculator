@@ -1,5 +1,5 @@
 window.onload = function() {
-    var pushCharacter = function(character) {
+    pushCharacter = function(character) {
         var input = document.querySelector("#display");
         input.value = input.value + character;
     };
@@ -9,14 +9,14 @@ window.onload = function() {
         buttons[i].onclick = function() { pushCharacter(buttons[i].innerHTML); }
     };
 
-    var calculate = function() {
+    calculate = function() {
         var input = document.querySelector("#display");
         input.value = eval(input.value).toString();
     };
     var equalbutton = document.querySelector(".button-equals");
     equalbutton.onclick = calculate;
 
-    var clear = function() {
+    clear = function() {
         var input = document.querySelector("#display");
         input.value = "";
     };
