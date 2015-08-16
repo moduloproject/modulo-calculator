@@ -24,3 +24,11 @@ window.onload = function() {
     var clearbutton = document.querySelector(".clearbutton");
     clearbutton.onclick = clear;
 }
+
+$('#display').on('keypress', function(e){
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+             if(code == 13) {
+                 calculate()
+             }
+    });

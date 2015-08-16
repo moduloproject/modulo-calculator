@@ -5,41 +5,49 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="box">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-			<input type="text" readonly id="display"></input>
 
-			<div class="keys">
-				<div class="row">
-					<!--7--><button class="button">7</button>
-					<!--8--><button class="button">8</button>
-					<!--9--><button class="button">9</button>
-					<!--"/"--><button class="button">/</button>
-				</div>
-				<div class="row">
-					<!--4--><button class="button">4</button>
-					<!--5--><button class="button">5</button>
-					<!--6--><button class="button">6</button>
-					<!--"*"--><button class="button">*</button>
-				</div>
-				<div class="row">
-					<!--1--><button class="button">1</button>
-					<!--2--><button class="button">2</button>
-					<!--3--><button class="button">3</button>
-					<!--"-"--><button class="button">-</button>
-				</div>
-				<div class="row">
-					<!--0--><button class="button">0</button>
-					<!--"."--><button class="button">.</button>
-					<!--"C"--><button class="clearbutton">C</button>
-					<!--"+"--><button class="button">+</button>
-				</div>
-				<div class="equals">
-					<!--"="--><button class="button-equals">=</button>
-				</div>
-			</div>
-			
-		</div>
+		<table style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+			<th colspan="4"><input type="text" id="display"></input>
+			</th>
+			<tr>
+		<!--7--><td><button class="button">7</button></td>
+		<!--8--><td><button class="button">8</button></td>
+		<!--9--><td><button class="button">9</button></td>
+		<!--9--><td><button class="button">/</button></td>
+		<!----><td></td>						
+			</tr>
+			<tr>
+		<!--4--><td><button class="button">4</button></td>
+		<!--5--><td><button class="button">5</button></td>
+		<!--6--><td><button class="button">6</button></td>
+		<!--"*"--><td><button class="button">*</button></td>
+			</tr>
+			<tr>
+		<!--1--><td><button class="button">1</button></td>
+		<!--2--><td><button class="button">2</button></td>
+		<!--3--><td><button class="button">3</button></td>
+		<!--"-"--><td><button class="button">-</button></td>				
+			</tr>
+			<tr>
+		<!--0--><td><button class="button">0</button></td>
+		<!--"."--><td><button class="button">.</button></td>
+		<!--"C"--><td><button class="clearbutton">C</button></td>
+		<!--"+"--><td><button class="button">+</button></td>				
+			</tr>
+			<tr>
+		<!--"="--><td colspan="4"><button class="button-equals">=</button></td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
 		<script type="text/javascript" src="calculator.js"></script>
 	</body>
 </html>
